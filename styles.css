@@ -1,5 +1,56 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #E50914;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 24px 48px;
+}
+
+.cabecalho .cabecalho__logo img {
+    width: 148px;
+}
+
+.cabecalho .cabecalho__butoes {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho .cabecalho__butoes select {
+    padding: 6px 36px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.cabecalho .cabecalho__butoes select option {
+    color: var(--cor-primaria);
+}
+
+.cabecalho .cabecalho__butoes button {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 700;
 }
