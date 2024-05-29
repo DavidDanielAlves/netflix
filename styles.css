@@ -19,17 +19,19 @@ body {
 
 .cabecalho {
     width: 100vw;
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
 .cabecalho .cabecalho__container {
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    z-index: 10;
     align-items: start;
-    width: 85%;
+    width: 100%;
     margin: auto;
-    padding: 24px 48px;
+    padding: 24px 12%;
 }
 
 .cabecalho .cabecalho__logo img {
@@ -69,13 +71,9 @@ body {
 
 .cabecalho .cabecalho__background {
     background: url("./assets/images/background.png");
+    background-size: cover;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
+    transform: translateY(-100px);
 }
 
 .cabecalho .cabecalho__background::after {
@@ -101,15 +99,16 @@ body {
 
 .cabecalho .cabecalho__background article h1 {
     font-size: 48px;
-}
-
-.cabecalho .cabecalho__background article p:nth-child(1) {
-    font-size: 24px;
+    font-weight: 700;
 }
 
 .cabecalho .cabecalho__background article p:nth-child(2) {
-    font-size: 20px;
+    font-size: 24px;
     margin: 18px 0;
+}
+
+.cabecalho .cabecalho__background article p:nth-child(3) {
+    font-size: 20px;
 }
 
 .cabecalho .cabecalho__background article form {
@@ -120,19 +119,21 @@ body {
 .cabecalho .cabecalho__background article form input:nth-child(1) {
     background-color: rgba(0, 0, 0, 0.644);
     border: 1px solid gray;
-    padding: 12px;
+    padding: 16px;
     width: 70%;
     color: white;
     border-radius: 3px;
 }
 
 .cabecalho .cabecalho__background article form input:nth-child(2) {
-    padding: 8px 12px;
+    padding: 12px;
     border-radius: 5px;
     width: 29%;
     background-color: var(--cor-terciaria);
     color: white;
     font-size: 20px;
+    border: none;
+    transform: translateY(3px);
 }
 
 .cabecalho .cabecalho__background article form input:nth-child(2):hover {
