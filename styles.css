@@ -5,7 +5,7 @@
     --cor-quaternaria: #ad070f;
     --cor-quintenaria: rgba(0, 0, 0, 0.7);
     --cor-sextenaria: rgba(0, 0, 0, 0.644);
-    --cor-setenaria: rgba(0, 0, 0, 0.644);
+    --cor-setenaria: gray;
 }
 
 *{
@@ -22,6 +22,7 @@ body {
 
 .cabecalho {
     width: 100vw;
+    max-width: 100%;
     position: relative;
     z-index: 1;
 }
@@ -77,6 +78,7 @@ body {
     background-size: cover;
     height: 100vh;
     transform: translateY(-100px);
+    max-width: 100%;
 }
 
 .cabecalho .cabecalho__background::after {
