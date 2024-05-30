@@ -4,6 +4,8 @@
     --cor-terciaria: #E50914;
     --cor-quaternaria: #ad070f;
     --cor-quintenaria: rgba(0, 0, 0, 0.7);
+    --cor-sextenaria: rgba(0, 0, 0, 0.644);
+    --cor-setenaria: rgba(0, 0, 0, 0.644);
 }
 
 *{
@@ -118,8 +120,8 @@ body {
 }
 
 .cabecalho .cabecalho__background article form input:nth-child(1) {
-    background-color: rgba(0, 0, 0, 0.644);
-    border: 1px solid gray;
+    background-color: var(--cor-sextenaria);
+    border: 1px solid var(--cor-setenaria);
     padding: 16px;
     width: 70%;
     color: white;
@@ -131,7 +133,7 @@ body {
     border-radius: 5px;
     width: 29%;
     background-color: var(--cor-terciaria);
-    color: white;
+    color: var(--cor-secundaria);
     font-size: 20px;
     border: none;
     transform: translateY(3px);
@@ -173,14 +175,14 @@ body {
 }
 
 main {
-    background-color: gray;
+    background-color: var(--cor-setenaria);
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
 main .secao {
-    background-color: #000000;
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -242,7 +244,7 @@ main .perguntas-frequentes .topico button {
 
 main .perguntas-frequentes .topico button p {
     font-size: 24px;
-    color: white;
+    color: var(--cor-secundaria);
 }
 
 main .perguntas-frequentes .topico .topico__descricao {
@@ -283,7 +285,7 @@ main .perguntas-frequentes form article {
 main .perguntas-frequentes form article input:nth-child(1) {
     margin-top: 24px;
     background-color: rgba(0, 0, 0, 0.644);
-    border: 1px solid gray;
+    border: 1px solid var(--cor-setenaria);
     padding: 16px;
     width: 70%;
     color: white;
@@ -303,4 +305,43 @@ main .perguntas-frequentes form article input:nth-child(2) {
 
 main .perguntas-frequentes form article input:nth-child(2):hover {
     background-color: var(--cor-quaternaria);
+}
+
+footer {
+    margin: 32px 0;
+}
+
+footer .container__footer {
+    width: 70%;
+    margin: auto;
+    color: rgb(168, 168, 168);
+}
+
+footer a {
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+}
+
+footer .container-footer__listas {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+}
+
+footer .container-footer__listas ul {
+    list-style: none;
+}
+
+footer .container-footer__listas ul li {
+    margin-bottom: 16px;
+}
+
+footer select {
+    padding: 6px 36px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 32px;
 }
