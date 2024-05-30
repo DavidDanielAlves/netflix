@@ -15,6 +15,7 @@
 body {
     background-color: var(--cor-primaria);
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -169,4 +170,137 @@ body {
 .cabecalho .cabecalho__promocao .promocao__container .promocao__descricao a {
     color: #448ef4;
     font-size: 20px;
+}
+
+main {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+main .secao {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px 0;
+}
+
+main .secao h3 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+main .secao p {
+    width: 500px;
+    font-size: 20px;
+}
+
+main .secao__onde-quiser,
+.secao__baixar {
+    flex-direction: row-reverse;
+}
+
+main .perguntas-frequentes {
+    background-color: var(--cor-primaria);
+    flex-direction: column;
+}
+
+main .perguntas-frequentes h2 {
+    text-align: center;
+    margin: 32px 0;
+    font-size: 48px;
+}
+
+main .perguntas-frequentes p {
+    width: fit-content;
+}
+
+main .container__topicos {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main .perguntas-frequentes .topico {
+    width: 100%;
+}
+
+main .perguntas-frequentes .topico button {
+    background-color: rgb(36, 36, 36);
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+main .perguntas-frequentes .topico button p {
+    font-size: 24px;
+    color: white;
+}
+
+main .perguntas-frequentes .topico .topico__descricao {
+    background-color: rgb(56, 56, 56);
+    padding: 32px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+main .perguntas-frequentes .topico img {
+    width: 40px;
+    transform: rotate(45deg);
+}
+
+main .perguntas-frequentes .topico .topico__descricao.escondido {
+    display: none;
+}
+
+main .perguntas-frequentes form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 42px;
+}
+
+main .perguntas-frequentes form  p{
+    font-size: 20px;
+}
+
+main .perguntas-frequentes form article {
+    margin-top: 18px;
+    width: 500px;
+}
+
+main .perguntas-frequentes form article input:nth-child(1) {
+    margin-top: 24px;
+    background-color: rgba(0, 0, 0, 0.644);
+    border: 1px solid gray;
+    padding: 16px;
+    width: 70%;
+    color: white;
+    border-radius: 3px;
+}
+
+main .perguntas-frequentes form article input:nth-child(2) {
+    padding: 12px;
+    border-radius: 5px;
+    width: 29%;
+    background-color: var(--cor-terciaria);
+    color: white;
+    font-size: 20px;
+    border: none;
+    transform: translateY(3px);
+}
+
+main .perguntas-frequentes form article input:nth-child(2):hover {
+    background-color: var(--cor-quaternaria);
 }
