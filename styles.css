@@ -5,7 +5,7 @@
     --cor-quaternaria: #ad070f;
     --cor-quintenaria: rgba(0, 0, 0, 0.7);
     --cor-sextenaria: rgba(0, 0, 0, 0.644);
-    --cor-setenaria: gray;
+    --cor-setenaria: rgb(59, 59, 59);
 }
 
 *{
