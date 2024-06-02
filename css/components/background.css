@@ -11,6 +11,16 @@
     justify-content: center;
 }
 
+.background::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .background .background__container {
     position: absolute;
     z-index: 3;
@@ -39,6 +49,7 @@
 
 .background .background__promocao {
     position: absolute;
+    z-index: 1;
     background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
     bottom: -10%;
     display: flex;
