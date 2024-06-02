@@ -1,0 +1,25 @@
+.secao {
+    padding: 72px 0;
+    border-bottom: 10px solid rgb(65, 65, 65);
+
+    .container__secao {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    img {
+        align-self: center;
+    }
+
+    h3 {
+        font-size: 42px;
+        margin: 1.5rem 0;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}

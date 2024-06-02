@@ -1,0 +1,42 @@
+.topico {
+    width: 100%;
+
+    p {
+        color: white;
+    }
+
+    button {
+        border: none;
+        display: flex;
+        padding: 1.5rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(34, 34, 34);
+        width: 100%;
+        margin-bottom: 5px;
+
+        img {
+            width: 40px;
+        }
+
+        &:hover {
+            background-color: rgb(71, 71, 71);
+        }
+
+        &:active {
+            background-color: rgb(34, 34, 34);
+        }
+    }
+
+    .topico__descricao {
+        background-color: rgb(34, 34, 34);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .topico__descricao.escondido {
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+.cabecalho {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.cabecalho .cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 24px 32px;
+}
+
+.cabecalho .cabecalho__butoes {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.cabecalho .botao__entrar {
+    padding: 8px 16px;
+    font-size: 16px;
+}
