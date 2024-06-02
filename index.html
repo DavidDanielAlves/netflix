@@ -46,7 +46,10 @@
           </p>
 
           <form class="formulario">
-            <input type="text" placeholder="Email ou número de celular" />
+            <article class="input">
+              <p class="label">Email ou número de celular</p>
+              <input type="text" placeholder="Email ou número de celular" />
+            </article>
             <button class="botao botao__vamosla">Vamos lá</button>
           </form>
         </article>
@@ -244,13 +247,16 @@
         </article>
 
         <article class="container__formulario">
-          <p>
+          <p class="texto">
             Tudo pronto para assistir? Informe seu email ou número de celular
             para criar ou reiniciar sua assinatura.
           </p>
           <form class="formulario">
-            <input type="text" placeholder="Email ou número de celular" />
-            <button class="botao">Vamos lá</button>
+            <article class="input">
+              <p class="label">Email ou número de celular</p>
+              <input type="text" placeholder="Email ou número de celular" />
+            </article>
+            <button class="botao botao__vamosla">Vamos lá</button>
           </form>
         </article>
       </section>
@@ -297,5 +303,18 @@
         <p>Netflix Brasil</p>
       </article>
     </footer>
+<!-- 
+    <script>
+      const input = document.querySelector('input');
+      const label = document.querySelector('.label');
+
+      document.body.addEventListener("click", (e) => {
+        if (e.srcElement != input) {
+          label.classList.remove('animation');
+        } else if (e.srcElement === input) {
+          label.classList.add('animation');
+        }
+      })
+    </script> -->
   </body>
 </html>

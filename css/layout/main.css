@@ -28,7 +28,7 @@
     gap: 32px;
     margin-top: 1.5rem;
 
-    p {
+    .texto {
         width: 60%;
     }
 }

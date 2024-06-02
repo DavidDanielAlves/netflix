@@ -1,19 +1,54 @@
+@keyframes text {
+    to {
+        transform: scale(0.8) translateY(-20px);
+        left: 0;
+    }
+}
+
 .formulario {
     width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
+    .input {
+       padding: 8px;
+       width: 70%;
+       position: relative;
 
-    input {
-        width: 70%;
-        background-color: rgba(0, 0, 0, 0.61);
-        color: white;
-        padding: 16px;
+       input {
+           background-color: rgba(0, 0, 0, 0.61);
+           width: 100%;
+           color: white;
+           padding: 18px;
+           font-size: 16px;
+           border-radius: 5px;
+
+           &::placeholder {
+            opacity: 0;
+           }
+        }
+
+       .label {
+        margin-left: 10px;
+        position: absolute;
         font-size: 16px;
-        border-radius: 5px;
+        top: 40%;
+        left: 19px;
+        color: rgb(167, 167, 167);
+       }
+
     }
+
 
     button {
         width: 28%;
-        font-size: 20px;
-        padding: 16px 0;
+        font-size: 24px;
+        padding: 12px 0;
     }
+}
+
+.animation {
+    animation: text 600ms linear forwards;
 }
