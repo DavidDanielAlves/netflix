@@ -303,18 +303,18 @@
         <p>Netflix Brasil</p>
       </article>
     </footer>
-<!-- 
+
     <script>
       const input = document.querySelector('input');
       const label = document.querySelector('.label');
 
       document.body.addEventListener("click", (e) => {
-        if (e.srcElement != input) {
-          label.classList.remove('animation');
-        } else if (e.srcElement === input) {
+        if (e.srcElement === input || input.value != '') {
           label.classList.add('animation');
+        } else if(e.srcElement != input) {
+          label.classList.remove('animation');
         }
       })
-    </script> -->
+    </script>
   </body>
 </html>
