@@ -1,3 +1,27 @@
+@keyframes fechar-topico {
+    0% {
+        height: 250px;
+        padding: 1.5rem;
+    }
+
+    100% {
+        height: 0;
+        padding: 0 1.5rem;
+    }
+}
+
+@keyframes abrir-topico {
+    0% {
+        height: 0;
+        padding: 0 1.5rem;
+    }
+
+    100% {
+        height: 250px;
+        padding: 1.5rem;
+    }
+}
+
 .topico {
     width: 100%;
 
@@ -34,6 +58,8 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
+        overflow: hidden;
+        animation: fechar-topico 600ms 1 linear alternate forwards;
     }
 
     .topico__descricao.escondido {

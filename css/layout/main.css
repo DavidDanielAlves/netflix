@@ -3,6 +3,67 @@
     flex-direction: row-reverse;
 }
 
+.secao__dispositivos .secao__dispositivos__imgens {
+    position: relative;
+}
+
+.secao__dispositivos .container-video {
+    position: absolute;
+    top: 21%;
+    left: 13%;
+    z-index: -10;
+}
+
+.secao__onde-quiser .secao__dispositivos__imgens {
+    position: relative;
+}
+
+.secao__onde-quiser .container-video {
+    position: absolute;
+    top: 11%;
+    left: 18%;
+    z-index: -10;
+}
+
+.secao__baixar {
+    position: relative;
+}
+
+.secao__baixar .container__baixar {
+    width: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 8px 12px;
+    gap: 24px;
+    position: absolute;
+    top: 65%;
+    left: 18%;
+
+    img {
+        width: 52px;
+    }
+
+    p {
+        color: rgb(0, 119, 255);
+        font-size: 14px;
+        margin-top: 4px;
+    }
+
+    .descricao {
+        justify-self: start;
+    }
+
+    .download {
+        width: 2.5px;
+        height: 15px;
+        background-color: white;
+    }
+}
+
 .perguntas-frequentes {
 
     h2 {
